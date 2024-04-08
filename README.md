@@ -30,14 +30,12 @@ Run the game:
 
 python main.py
 
-css
-Copy code
-
 <h2>Gameplay</h2>
 
-- Use the arrow keys to navigate the snake around the screen.
+- Use the arrow keys or WASD to navigate the snake around the screen.
 - Eat food to grow longer and score points.
 - Avoid colliding with the walls or yourself.
+- Every time you eat food, the snake moves faster!
 
 <h2>Contributing</h2>
 
