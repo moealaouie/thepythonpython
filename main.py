@@ -45,8 +45,16 @@ def setup_key_bindings():
     screen.onkey(game_restart, "r")  # Add event listener for "R" key press
 
 
+def game_over():
+    global game_state
+    game_state = "GAME_OVER"
+    scoreboard.game_overs()
+
+
 def exit_game():
-    turtle.bye()
+    global game_state
+    game_state = "EXIT"
+
 
 
 screen.onkeypress(exit_game, "Escape")  # Bind the Escape key to exit_game function
@@ -62,10 +70,7 @@ def game_restart():
     game_state = "PLAYING"  # Ensure the game loop knows to continue running
 
 
-def game_over():
-    global game_state
-    game_state = "GAME_OVER"
-    scoreboard.game_overs()
+
 
 
 setup_key_bindings()
@@ -73,7 +78,7 @@ game_state = "PLAYING"
 move_speed = 0.1
 speed_increase = 0.01
 
-while True:
+while game_state != "EXIT":
     if game_state == "PLAYING":
         screen.update()
         time.sleep(move_speed)
