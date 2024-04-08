@@ -14,14 +14,14 @@ Ensure you have Python installed on your machine. This game was developed with P
 
 Clone the repository to your local machine:
 
-'git clone https://github.com/moealaouie/thepythonpython.git'
+```git clone https://github.com/moealaouie/thepythonpython.git```
 
 csharp
 Copy code
 
 Navigate into the project directory:
 
-'cd thepythonpython'
+```cd thepythonpython```
 
 mathematica
 Copy code
