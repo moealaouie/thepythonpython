@@ -16,19 +16,15 @@ Clone the repository to your local machine:
 
 ```git clone https://github.com/moealaouie/thepythonpython.git```
 
-csharp
-Copy code
 
 Navigate into the project directory:
 
 ```cd thepythonpython```
 
-mathematica
-Copy code
 
 Run the game:
 
-python main.py
+```python main.py```
 
 <h2>Gameplay</h2>
 
